@@ -4,6 +4,7 @@ import aws_logo from './logos/aws_logo.png'
 import react_logo from './logos/react_logo.png'
 import fastapi_logo from './logos/FastAPI_logo.png'
 import onnx_logo from './logos/onnx_logo.png'
+import hf_logo from './logos/hf_logo.png'
 import { useState, useEffect } from 'react';
 
 
@@ -52,6 +53,8 @@ function App() {
       <div className='header text-5xl shadow-xl border-solid border-4 border-indigo-200 border-x-indigo-500'>
         Sentiment Analysis API
         <br></br>
+        with DistilBERT model
+        <br></br>
         <br></br>
         <div className='text-xl'>created using
           <div className='logo-container'>
@@ -60,6 +63,7 @@ function App() {
             <img src={react_logo} alt="react"></img>
             <img src={fastapi_logo} alt="fastapi" className='fastapi'></img>
             <img src={onnx_logo} alt="onnx" className='onnx'></img>
+            <img src={hf_logo} alt="hf" className='hf'></img>
           </div>
         </div>
       </div>
@@ -69,7 +73,7 @@ function App() {
           </textarea>
           <button className='trigger-api rounded-full bg-cyan-400'
           onClick={apiClickHandler}>Analyze</button>
-          <pre className='api-response shadow-xl border-solid border-4 border-x-fuchsia-600'>{typeof(apiResponse) == "object"? `{ emotion: ${apiResponse.emotion},` + `\ntime elapsed: ${apiResponse.time_elapsed},`+ "\naccuracy: 0.89 }": apiResponse}</pre>
+          <pre className='api-response shadow-xl border-solid border-4 border-x-fuchsia-600'>{typeof(apiResponse) == "object"? `{ emotion: ${apiResponse.emotion},` + `\ntime elapsed: ${apiResponse.time_elapsed},`+ "\nmodel accuracy: 0.89 }": apiResponse}</pre>
       </div>
     </div>
 

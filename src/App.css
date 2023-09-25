@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 #root {
-  height: 220vh;
+  height: 290vh;
   margin: 0;
   padding: 0;
 }
@@ -34,6 +34,10 @@ img {
 }
 .onnx {
   width: 400px;
+}
+
+.hf {
+  width: 200px;
 }
 
 .page-container {
