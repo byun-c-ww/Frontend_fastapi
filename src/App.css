@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 #root {
-  height: 100vh;
+  height: 220vh;
   margin: 0;
   padding: 0;
 }
@@ -11,6 +11,29 @@
 * {
   color: white;
   font-family: "Trebuchet MS", Helvetica, sans-serif
+}
+
+.logo-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+img {
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 5px;
+  width: 150px;
+}
+.aws {
+  width: 400px;
+}
+.fastapi {
+  width: 300px;
+}
+.onnx {
+  width: 400px;
 }
 
 .page-container {
@@ -40,12 +63,27 @@
 .api-response {
   width: 40%;
   margin: 10px 10px;
+  max-width: 100%;
+  overflow: auto; /* Add scrollbars when content overflows */
+  white-space: pre-line; /* Wrap text and preserve line breaks */
+  padding: 10px; /* Optional: Add padding for spacing */
 }
 
 .header {
   width: 80%;
 }
 
+.trigger-api {
+  padding: 10px;
+  color: black;
+}
+
+.trigger-api:hover {
+  background-color: rgba(0,100,200,3);
+}
+
 @media only screen and (min-width: 768px) {
   .result-container {flex-direction: row;}
+  .logo-container {flex-direction: row; gap: 10px; flex-wrap: wrap;}
+  #root {height: 120vh;}
 }
