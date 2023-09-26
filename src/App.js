@@ -49,7 +49,7 @@ function App() {
     setText(temp)
   }
   return (
-    <div className='page-container dark:bg-slate-700'>
+    <div className='page-container'>
       <div className='header text-5xl shadow-xl border-solid border-4 border-indigo-200 border-x-indigo-500'>
         Sentiment Analysis API
         <br></br>
