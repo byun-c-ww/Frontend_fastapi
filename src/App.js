@@ -50,12 +50,8 @@ function App() {
   }
   return (
     <div className='page-container'>
-<<<<<<< HEAD
-      <div className='header text-5xl shadow-xl border-solid border-4 border-indigo-200 border-x-indigo-500'>
-=======
       <div className='header shadow-xl border-none border-4 border-indigo-200 border-x-indigo-500'>
         <div className='top-text'>
->>>>>>> 089e0ef (made some color changes)
         Sentiment Analysis API
         <br></br>
         with DistilBERT model
