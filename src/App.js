@@ -50,30 +50,37 @@ function App() {
   }
   return (
     <div className='page-container'>
+<<<<<<< HEAD
       <div className='header text-5xl shadow-xl border-solid border-4 border-indigo-200 border-x-indigo-500'>
+=======
+      <div className='header shadow-xl border-none border-4 border-indigo-200 border-x-indigo-500'>
+        <div className='top-text'>
+>>>>>>> 089e0ef (made some color changes)
         Sentiment Analysis API
         <br></br>
         with DistilBERT model
         <br></br>
         <br></br>
-        <div className='text-xl'>created using
-          <div className='logo-container'>
-            <img src={docker_logo} alt="docker"></img>
-            <img src={aws_logo} alt="aws" className='aws'></img>
-            <img src={react_logo} alt="react"></img>
-            <img src={fastapi_logo} alt="fastapi" className='fastapi'></img>
-            <img src={onnx_logo} alt="onnx" className='onnx'></img>
-            <img src={hf_logo} alt="hf" className='hf'></img>
-          </div>
+        </div>
+        <div className='created_using'>
+          created using
+        </div>
+        <div className='logo-container'>
+          <img src={docker_logo} alt="docker"></img>
+          <img src={aws_logo} alt="aws" className='aws'></img>
+          <img src={react_logo} alt="react"></img>
+          <img src={fastapi_logo} alt="fastapi" className='fastapi'></img>
+          <img src={onnx_logo} alt="onnx" className='onnx'></img>
+          <img src={hf_logo} alt="hf" className='hf'></img>
         </div>
       </div>
       <div className='result-container'>
-          <textarea className='user-textarea rounded-md shadow-xl border-solid border-4 border-indigo-500/100'
+          <textarea className='user-textarea shadow-xl'
           placeholder='input text you want to analyze and get a sentiment analysis score'>
           </textarea>
           <button className='trigger-api rounded-full bg-cyan-400'
           onClick={apiClickHandler}>Analyze</button>
-          <pre className='api-response shadow-xl border-solid border-4 border-x-fuchsia-600'>{typeof(apiResponse) == "object"? `{ emotion: ${apiResponse.emotion},` + `\ntime elapsed: ${apiResponse.time_elapsed},`+ "\nmodel accuracy: 0.89 }": apiResponse}</pre>
+          <pre className='api-response shadow-xl'>{typeof(apiResponse) == "object"? `{ emotion: ${apiResponse.emotion},` + `\ntime elapsed: ${apiResponse.time_elapsed},`+ "\nmodel accuracy: 0.89 }": apiResponse}</pre>
       </div>
     </div>
 
