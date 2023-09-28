@@ -3,7 +3,6 @@
 @tailwind utilities;
 
 #root {
-  height: 350vh;
   margin: 0;
   padding: 0;
 }
@@ -110,8 +109,24 @@ img {
   margin-bottom: 20px;
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 568px) {
   .result-container {flex-direction: row;}
   .logo-container {flex-direction: row; gap: 10px; flex-wrap: wrap;}
+  #root {height: 230vh;}
+}
+
+@media only screen and (min-width: 700px) {
+  #root {height: 210vh;}
+}
+@media only screen and (min-width: 800px) {
   #root {height: 180vh;}
+}
+@media only screen and (min-width: 900px) {
+  #root {height: 170vh;}
+}
+@media only screen and (min-width: 1000px) {
+  #root {height: 160vh;}
+}
+@media only screen and (min-width: 1100px) {
+  #root {height: 150vh;}
 }
